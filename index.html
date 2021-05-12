@@ -2,59 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hellstone Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kumbh+Sans:wght@300&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2 ?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <div class="banner">
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html"></a>Om oss</li>
-                        <li><a href="contact.html"></a>Kontackta oss</li>
-                        <li><a href="vilkar.html"></a>Köpvilkår</li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <div>
-                    <a href="index.html">
-                        <img src="Hellstone.png" alt="Hellstone logga" width="100" class="logo" />
-                    </a>
-                    <a href="index.html">
-                        <h1>Hellstone Music</h1>
-                    </a> 
-                </div>
-                
+            <a href="index.html">
+                <img src="Hellstone.png" alt="Hellstone logga" width="140" class="logo" />
+            </a>
+            <a href="index.html">
+                <h1>Hellstone Music</h1>
+            </a>
+        </div>        
+        <label class="nav-area">
+            ☰
+            <input class="nav-toggle" type="checkbox" />
+            <nav class="headnav">
                 <ul>
-                    <li><a href="gitarrer.html">Gitarrer</a></li>
-                    <li><a href="trummor.html">Trummor</a></li>
-                    <li><a href="todo.html">Att göra lista</a></li>
-                    <li><a href="cart.html"></a><img src="shopping-cart.png" alt="shopping cart" width="50"></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="contact.html">Kontackta oss</a></li>
+                    <li><a href="vilkar.html">Köpvilkår</a></li>
+                    <li><a href="todo.html">Inköps lista</a></li>
+                    <li><a href="cart.html"><img src="shopping-cart.png" alt="kundvangn" width="100"></a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </label>
     </header>
     <main>
-        <!-- Nyheter (2 eller 3 bilder som ändras sig efter en stund med js)-->
-        <div>
+        <article id="games">
+            <h2 style="padding: 32px">Recomenderade saker</h2>
 
-        </div>
-
-        <!-- Recomenderat (några bilder på instrument)-->
-        <div>
-
-        </div>
-
+            <div class="defualt">
+                <a href="games.html">
+                    <img src="https://picsum.photos/300/300" alt="sak 1" />
+                </a>
+                <a href="games.html">
+                    <img src="https://picsum.photos/301/300" alt="sak 2" />
+                </a>
+                <a href="games.html">
+                    <img src="https://picsum.photos/302/300" alt="sak 3" />
+                </a>
+            </div>
+        </article>
+        <article id="kläder">
+            <h2 style="padding: 32px">Gitarrer</h2>
+            <div class="defualt">
+                <div>
+                    <a href="gitarrer.html">
+                        <img src="https://picsum.photos/800/350"
+                            alt="Gitarrer förhoppnigsfist" />
+                    </a>
+                </div>
+            </div>
+            <div style="padding: 32px" class="defualt">
+                <p>Coola gitarrer för balla priser</p>
+            </div>
+        </article>
+        <article id="job">
+            <h2 style="padding: 32px">Trummor</h2>
+            <div class="defualt">
+                <a href="trummor.html">
+                    <img src="https://picsum.photos/800/351" alt="Bild på trummor hoppas jag" />
+                </a>
+            </div>
+            <div class="defualt" style="padding: 32px">
+                <p>banka in takten</p>
+            </div>
+        </article>
     </main>
     <footer>
-
+        <div class="foot">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="Hellstone.png" alt="hellstone logga" width="70" class="logo" />
+                        </a>
+                    </li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="contact.html">Kontact</a></li>
+                    <li><a href="vilkar.html">Vilkår</a></li>
+                    <li><a href="gitarrer.html">Gitarrer</a></li>
+                    <li><a href="trummor.html">Trummor</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>© 2020 Vilius Ovander. All rights reserved >:-(</p>
+        </div>
     </footer>
-
 </body>
 
 </html>
