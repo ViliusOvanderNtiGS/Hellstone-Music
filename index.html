@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kumbh+Sans:wght@300&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2 ?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet" />
+    <script defer src="app-local-storage.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                     <li><a href="about.html">Om oss</a></li>
                     <li><a href="contact.html">Kontackta oss</a></li>
                     <li><a href="vilkar.html">Köpvilkår</a></li>
-                    <li><a href="todo.html">Inköps lista</a></li>
+                    <li><a href="#todo">Inköps lista</a></li>
                     <li><a href="cart.html"><img src="shopping-cart.png" alt="kundvangn" width="100"></a></li>
                 </ul>
             </nav>
@@ -73,9 +74,23 @@
                 </a>
             </div>
             <div class="defualt" style="padding: 32px">
-                <p>banka in takten</p>
+                <p>Banka in takten</p>
             </div>
         </article>
+                <article id="todo">
+                    <h2 style="padding: 32px">Köplista</h2>
+                    <div class="defualt">
+                            <section id="app-root">
+                                <div id="list-root">
+                                    <!-- javascript -->
+                                </div>
+                                <form data-list-form>
+                                    <input type="text" data-list-input />
+                                    <button>+</button>
+                                </form>
+                            </section>
+                    </div>
+                </article>
     </main>
     <footer>
         <div class="foot">
